@@ -99,8 +99,9 @@ body {
 
 .resume-card {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 60px;
@@ -109,6 +110,7 @@ body {
     box-shadow: 0px 10px 20px rgba(25, 34, 44, 0.4);
     transition: transform 0.2s ease-in;
 }
+
 
 .card {
     margin-bottom: 30px;
@@ -139,7 +141,7 @@ body {
 }
 
 .resume-card-img {
-    width: 35%;
+    width: 350px;
     margin-bottom: 20px;
     box-shadow: 0px 10px 20px rgba(66, 81, 99, 0.40);
 }
@@ -286,3 +288,38 @@ body {
     margin-top: 150px;
     margin-bottom: 150px;
 }
+
+@media screen and (max-width: 1078px) {
+    .posrfolio-cards-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .card {
+        margin-bottom: 30px;
+        max-width: 360px;
+        background-color: white;
+        box-shadow: 0px 10px 20px rgba(66, 81, 99, 0.40);
+        transition: transform 0.2s ease-in;
+    }
+    .card-img {
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .project-info-img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .project-info-img {
+        width: 340px;
+    }
+}
+
+
